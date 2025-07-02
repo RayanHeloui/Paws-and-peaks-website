@@ -113,8 +113,8 @@ html, body {
   position: absolute;
   top: 0;
   left: 7%;
-  width: 100%;       /* Full width of email-box-container */
-  height: 100%;      /* Full height of email-box-container */
+  width: 95%;       /* Full width of email-box-container */
+  height: 95%;      /* Full height of email-box-container */
   background-color: #fad2ad;
   padding: 40px;
   border-radius: 0;
