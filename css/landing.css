@@ -142,12 +142,13 @@ html, body {
   text-align: center;
   margin: 0;
   padding-top: 0; /* Removes extra space at the top */
+  margin-left: -10px; 
 }
 
 /* 📄 Body Text */
 .thank-you-text {
   font-size: 1.3rem;
-  line-height: 1.4;
+  line-height: 1.1;
   color: #5a3d29;
   margin-top: 20px; /* Adds space between heading and body */
 }
