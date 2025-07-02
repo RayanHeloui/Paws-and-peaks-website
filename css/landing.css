@@ -46,7 +46,7 @@ html, body {
 /* Overlay: Email form */
 .email-box {
   position: absolute;
-  top: 35%;       /* 📍 Center it vertically more */
+  top: 45%;       /* 📍 Center it vertically more */
   right: -5%;     /* ✅ Keeps it slightly off-screen */
   width: 100vw;   /* 🧨 Double the original size */
   max-width: 900px;
