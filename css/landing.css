@@ -109,10 +109,22 @@ html, body {
 .thank-you-message {
   text-align: center;
   padding: 1.5em 1em;
-  font-weight: 600;
-  font-size: 1.1em;
-  color: #fff; /* or adjust to match your design */
 }
+
+.thank-you-heading {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #fff; /* change this if needed */
+  margin-bottom: 0.5em;
+}
+
+.thank-you-text {
+  font-size: 1em;
+  font-weight: 400;
+  color: #eee; /* lighter for contrast */
+  line-height: 1.4;
+}
+
 
 
 /* 🧡 Bottom Slogan */
