@@ -56,14 +56,17 @@ html, body {
 /* Overlay: Bottom slogan */
 .slogan-text {
   position: absolute;
-  bottom: 40px;
+  bottom: 30px;                      /* ✅ Padding from bottom */
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Nostalgic Remain', serif;
-  font-size: 4.5rem;         /* 🔥 Bigger font */
+  font-size: 2.5rem;                /* ✅ More reasonable size */
   color: #7b523c;
   text-align: center;
   text-transform: uppercase;
   z-index: 2;
+  line-height: 1.2;
+  letter-spacing: 1px;
 }
+
 
