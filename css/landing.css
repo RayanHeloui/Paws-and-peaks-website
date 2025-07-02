@@ -129,7 +129,10 @@ html, body {
 
 /* 📝 Thank You Text */
 .thank-you-content {
-  text-align: left;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Keeps body text left-aligned */
 }
 
 .thank-you-heading {
@@ -138,6 +141,8 @@ html, body {
   text-transform: uppercase;
   color: #5a3d29;
   margin-bottom: 16px;
+  width: 100%;
+  text-align: center;
 }
 
 .thank-you-text {
