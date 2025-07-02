@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Nostalgic Remain';
+  src: url('../fonts/NostalgicRemain-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -47,13 +54,16 @@ html, body {
 }
 
 /* Overlay: Bottom slogan */
-.slogan-img {
+.slogan-text {
   position: absolute;
-  bottom: 40px;              /* ⬆️ padding from bottom */
-  left: 50%;                 /* Start in the center */
-  transform: translateX(-50%);  /* ✅ Truly center it horizontally */
-  width: 200vw;               /* 👈 make it nice and big */
-  max-width: 700px;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Nostalgic Remain', serif;
+  font-size: 4.5rem;         /* 🔥 Bigger font */
+  color: #7b523c;
+  text-align: center;
+  text-transform: uppercase;
   z-index: 2;
 }
 
