@@ -1,6 +1,5 @@
 <script>
   // Ensure Firestore is initialized
-  
   const db = firebase.firestore();
 
   document.getElementById('subscribe-form').addEventListener('submit', function (e) {
@@ -18,7 +17,7 @@
       return;
     }
 
-    const thankYou = document.getElementById('thank-you-message');
+    const thankYou = document.getElementById('thank-you-box');
 
     // ✅ Save to Firestore
     db.collection('subscribers').add({
@@ -28,7 +27,7 @@
     })
     .then(() => {
       form.style.display = 'none';
-      if (thankYou) thankYou.style.display = 'block';
+      if (thankYou) thankYou.style.display = 'flex';
     })
     .catch((error) => {
       console.error("Firestore error:", error);
