@@ -36,11 +36,11 @@ html, body {
 /* Overlay: COMING SOON text */
 .coming-title {
   position: absolute;
-  top: 30%;
-  right: 18%; /* 🔁 was 3%, now moved left */
-  width: 80vw;
-  max-width: 900px;
-  transform: translateY(-50%) scale(1.1);
+  top: 20%;               /* 🔼 moved up from 30% */
+  right: 18%;             /* ✅ stays same – your preferred horizontal spot */
+  width: 90vw;            /* 🧠 increased from 80vw to make it larger */
+  max-width: 1000px;      /* 🔼 slightly bigger cap */
+  transform: translateY(-50%) scale(1.15); /* 👀 small zoom */
   z-index: 4;
 }
 
