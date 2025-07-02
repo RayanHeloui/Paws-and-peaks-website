@@ -6,24 +6,23 @@
   <title>Paws and Peaks – Coming Soon</title>
   <link rel="stylesheet" href="css/landing.css" />
 
- <!-- Firebase SDKs -->
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 
   <script>
-    
     const firebaseConfig = {
       apiKey: "AIzaSyCLZ1-cAQfPVaz_DBJ17mukif2rWqRESGC0",
       authDomain: "pawsandpeakswebsite.firebaseapp.com",
-      databaseURL: "https://pawsandpeakswebsite-default-rtdb.firebaseio.com",
       projectId: "pawsandpeakswebsite",
       storageBucket: "pawsandpeakswebsite.appspot.com",
       messagingSenderId: "1026558201114",
       appId: "1:1026558201114:web:c309483cf0050ac539b0a3",
       measurementId: "G-CDKGZXCPCD"
     };
+
     firebase.initializeApp(firebaseConfig);
-    const database = firebase.database();
+    const db = firebase.firestore();
   </script>
 </head>
 
@@ -52,22 +51,22 @@
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+
       const name = document.getElementById('name').value.trim();
       const email = document.getElementById('email').value.trim();
 
       if (name && email) {
-        const newRef = database.ref('subscribers').push();
-        newRef.set({
-          name,
-          email,
-          subscribedAt: new Date().toISOString()
+        db.collection('subscribers').add({
+          name: name,
+          email: email,
+          subscribedAt: firebase.firestore.FieldValue.serverTimestamp()
         })
         .then(() => {
           alert("Thank you for subscribing!");
           form.reset();
         })
         .catch((err) => {
-          console.error("Firebase error:", err);
+          console.error("Firestore error:", err);
           alert("Something went wrong.");
         });
       } else {
