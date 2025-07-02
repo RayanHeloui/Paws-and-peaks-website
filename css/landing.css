@@ -13,13 +13,16 @@ html, body {
   overflow: hidden;
 }
 
-/* Background mountain */
 .bg-container {
   position: absolute;
   inset: 0;
-  background: url('images/mountain.png') no-repeat;
-  background-size: cover;
-  background-position: left center;
+
+  /* ✅ Background image */
+  background: url('../images/mountain.png') no-repeat;
+  background-size: 200%; /* 👈 Make it large */
+  background-position: left bottom; /* 👈 Anchor bottom-left */
+  background-repeat: no-repeat;
+
   z-index: 0;
 }
 
