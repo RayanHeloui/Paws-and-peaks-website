@@ -108,50 +108,51 @@ html, body {
   background-color: #a65d3a;
 }
 
-/* 💖 Full-Screen Pink Thank You Box */
+/* 💖 Pink Thank You Box */
 .thank-you-box {
   position: absolute;
-  top: 2.5%;        /* Adds top gap */
-  left: 7%;         /* Left side spacing (already good) */
-  width: 86%;       /* Reduced from 90% to allow right gap */
-  height: 95%;      /* Keep bottom gap consistent */
+  top: 2.5%;
+  left: 7%;
+  width: 86%;
+  height: 95%;
   background-color: #fad2ad;
   padding: 40px;
   border-radius: 12px;
   display: none;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
   box-sizing: border-box;
   color: #5a3d29;
   z-index: 5;
 }
 
-/* 📝 Thank You Text */
+/* 📝 Thank You Content Wrapper */
 .thank-you-content {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Keeps body text left-aligned */
+  align-items: flex-start;
+  box-sizing: border-box;
 }
 
+/* 🐾 Title */
 .thank-you-heading {
   font-size: 4.2rem;
   font-weight: 700;
   color: #5a3d29;
   width: 100%;
   text-align: center;
-  align-self: center;
-  margin: 0;
-  margin-top: 0;         /* No extra space at the top */
-  padding-top: 10px;     /* Optional: tweak vertical space */
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 20px;
 }
 
-
+/* ✨ Body Text */
 .thank-you-text {
-  font-size: 1.3em;
-  line-height: 0.5;
+  font-size: 1.4rem;
+  line-height: 1.6;
   color: #5a3d29;
+  white-space: pre-line;
 }
 
 /* 🧡 Bottom Slogan */
