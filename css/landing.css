@@ -20,7 +20,7 @@ html, body {
   /* ✅ Background image */
   background: url('../images/mountain.png') no-repeat;
   background-size: 100%; /* 👈 Make it large */
-  background-position: -100px bottom; /* 👈 Anchor bottom-left */
+  background-position: -1000px bottom; /* 👈 Anchor bottom-left */
   background-repeat: no-repeat;
 
   z-index: 0;
