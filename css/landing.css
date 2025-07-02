@@ -117,7 +117,7 @@ html, body {
   height: 95%;      /* Keep bottom gap consistent */
   background-color: #fad2ad;
   padding: 40px;
-  border-radius: 0;
+  border-radius: 3px;
   display: none;
   flex-direction: column;
   justify-content: center;
