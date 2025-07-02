@@ -28,8 +28,8 @@ html, body {
   width: 100%;
   height: 100%;
   background: url('../images/mountain.png') no-repeat;
-  background-size: 115%;         /* ⬅️ Scale down a bit */
-  background-position: -750px bottom; /* ⬅️ Slight offset from left */
+  background-size: 115%;
+  background-position: -750px bottom;
   z-index: 0;
 }
 
@@ -44,28 +44,13 @@ html, body {
   z-index: 4;
 }
 
-/* 🟤 Brown Container Inside Email Box */
-.brown-container {
-  position: absolute;
-  top: 24%;
-  left: 5%;
-  width: 75%;
-  max-width: 500px;
-  background-color: #8B5E3C;
-  border-radius: 40px 0 0 40px;
-  padding: 20px;
-  box-sizing: border-box;
-  z-index: 2;
-  overflow: hidden;
-}
-
-/* 📮 Email Box Image (container with form) */
+/* 📮 Email Box Container (with brown box background image) */
 .email-box-container {
   position: absolute;
   top: 50%;
   right: -7%;
   transform: translateY(-50%);
-  width: 900px; /* Adjust this value as needed */
+  width: 900px;
   max-width: 100%;
   z-index: 3;
 }
@@ -76,20 +61,22 @@ html, body {
   display: block;
 }
 
-/* ✏️ Form over Email Box */
-.form-overlay {
+/* 📝 Form + Thank You Positioned Over the Brown Box Image */
+.form-overlay,
+.thank-you-box {
   position: absolute;
   top: 24%;
-  left: 5%; /* ⬅️ Shift more to the left */
-  width: 75%; /* ⬅️ Adjust width to stay within bounds */
+  left: 5%;
+  width: 75%;
   max-width: 500px;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  align-items: flex-start; /* Align inputs to start (left) */
+  align-items: flex-start;
+  z-index: 5;
 }
 
-
+/* ✍️ Input Fields */
 .form-overlay input {
   width: 100%;
   padding: 12px;
@@ -104,6 +91,7 @@ html, body {
   color: #7b523c;
 }
 
+/* 📩 Submit Button */
 .form-overlay button {
   width: 100%;
   padding: 12px;
@@ -121,38 +109,32 @@ html, body {
   background-color: #a65d3a;
 }
 
+/* 💖 Pink Thank You Box */
+.thank-you-box {
+  background-color: #FFC0CB;
+  border-radius: 20px;
+  padding: 24px;
+  box-sizing: border-box;
+  color: #5a3d29;
+  justify-content: flex-start;
+  display: none; /* hidden by default, shown on submit */
+}
+
+/* 📝 Thank You Message */
 .thank-you-content {
   text-align: left;
 }
 
-
 .thank-you-heading {
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-weight: 700;
-  color: #fff; /* change this if needed */
-  margin-bottom: 0.5em;
+  margin-bottom: 10px;
+  color: #5a3d29;
 }
 
 .thank-you-text {
   font-size: 1em;
-  font-weight: 400;
-  color: #eee; /* lighter for contrast */
-  line-height: 1.4;
-}
-
-/* 💖 Pink Thank You Box (hidden initially) */
-.thank-you-box {
-  background-color: #FFC0CB;
-  border-radius: 30px;
-  padding: 30px;
-  width: 95%;
-  margin-left: auto; /* leave left border visible */
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  box-sizing: border-box;
-  flex-direction: column;
-  gap: 10px;
+  line-height: 1.5;
   color: #5a3d29;
 }
 
