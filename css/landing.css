@@ -112,7 +112,7 @@ html, body {
 .thank-you-box {
   position: absolute;
   top: 0;
-  left: 10%;
+  left: 6%;
   width: 100%;       /* Full width of email-box-container */
   height: 100%;      /* Full height of email-box-container */
   background-color: #FFC0CB;
