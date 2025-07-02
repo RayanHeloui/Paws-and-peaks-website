@@ -65,15 +65,15 @@ html, body {
 .form-overlay {
   position: absolute;
   top: 22%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
+  left: 12%; /* ⬅️ Shift more to the left */
+  width: 75%; /* ⬅️ Adjust width to stay within bounds */
   max-width: 500px;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  align-items: center;
+  align-items: flex-start; /* Align inputs to start (left) */
 }
+
 
 .form-overlay input {
   width: 100%;
