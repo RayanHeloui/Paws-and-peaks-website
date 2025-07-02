@@ -111,14 +111,14 @@ html, body {
 /* 💖 Full-Screen Pink Thank You Box */
 .thank-you-box {
   position: absolute;
-  top: 0;
-  left: 7%;
-  width: 90%;       /* Full width of email-box-container */
-  height: 95%;      /* Full height of email-box-container */
+  top: 2.5%;        /* Adds top gap */
+  left: 7%;         /* Left side spacing (already good) */
+  width: 86%;       /* Reduced from 90% to allow right gap */
+  height: 95%;      /* Keep bottom gap consistent */
   background-color: #fad2ad;
   padding: 40px;
   border-radius: 0;
-  display: none;     /* Hidden by default */
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
