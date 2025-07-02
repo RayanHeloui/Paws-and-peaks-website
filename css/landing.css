@@ -108,52 +108,50 @@ html, body {
   background-color: #a65d3a;
 }
 
-/* 💖 Pink Thank You Box */
+/* 💖 Thank You Box */
 .thank-you-box {
   position: absolute;
-  top: 2.5%;
-  left: 7%;
-  width: 86%;
-  height: 95%;
+  top: 2.5%;        /* Adds top gap */
+  left: 7%;         /* Left side spacing */
+  width: 86%;       /* Reduced width to allow right gap */
+  height: 95%;      /* Slightly reduced height for top and bottom gaps */
   background-color: #fad2ad;
-  padding: 40px;
-  border-radius: 12px;
+  padding: 20px 30px; /* Adjusted padding for better spacing */
+  border-radius: 12px; /* Small rounding on edges */
   display: none;
   flex-direction: column;
-  align-items: flex-start;
   box-sizing: border-box;
   color: #5a3d29;
   z-index: 5;
 }
 
-/* 📝 Thank You Content Wrapper */
+/* 📝 Thank You Content */
 .thank-you-content {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  box-sizing: border-box;
+  align-items: flex-start; /* Keeps body text left-aligned */
 }
 
-/* 🐾 Title */
+/* 🐾 Heading */
 .thank-you-heading {
   font-size: 4.2rem;
   font-weight: 700;
   color: #5a3d29;
   width: 100%;
   text-align: center;
-  margin-top: 0;
-  padding-top: 0;
-  margin-bottom: 20px;
+  margin: 0;
+  padding-top: 0; /* Removes extra space at the top */
 }
 
-/* ✨ Body Text */
+/* 📄 Body Text */
 .thank-you-text {
-  font-size: 1.4rem;
-  line-height: 1.6;
+  font-size: 1.3rem;
+  line-height: 1.4;
   color: #5a3d29;
-  white-space: pre-line;
+  margin-top: 20px; /* Adds space between heading and body */
 }
+
 
 /* 🧡 Bottom Slogan */
 .slogan-text {
