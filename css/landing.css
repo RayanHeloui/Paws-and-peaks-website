@@ -117,7 +117,7 @@ html, body {
   height: 95%;      /* Keep bottom gap consistent */
   background-color: #fad2ad;
   padding: 40px;
-  border-radius: 3px;
+  border-radius: 12px;
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -133,7 +133,7 @@ html, body {
 }
 
 .thank-you-heading {
-  font-size: 2em;
+  font-size: 3em;
   font-weight: bold;
   text-transform: uppercase;
   color: #5a3d29;
@@ -141,8 +141,8 @@ html, body {
 }
 
 .thank-you-text {
-  font-size: 1.1em;
-  line-height: 1.6;
+  font-size: 1.3em;
+  line-height: 0.5;
   color: #5a3d29;
 }
 
