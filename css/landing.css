@@ -111,7 +111,7 @@ html, body {
 /* 💖 Full-Screen Pink Thank You Box */
 .thank-you-box {
   position: absolute;
-  top: 7%;
+  top: 0;
   left: 7%;
   width: 90%;       /* Full width of email-box-container */
   height: 95%;      /* Full height of email-box-container */
