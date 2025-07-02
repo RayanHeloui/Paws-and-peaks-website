@@ -29,7 +29,7 @@ html, body {
   height: 100%;
   background: url('../images/mountain.png') no-repeat;
   background-size: 115%;         /* ⬅️ Scale down a bit */
-  background-position: -700px bottom; /* ⬅️ Slight offset from left */
+  background-position: -750px bottom; /* ⬅️ Slight offset from left */
   z-index: 0;
 }
 
