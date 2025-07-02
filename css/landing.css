@@ -64,7 +64,7 @@ html, body {
 /* ✏️ Form over Email Box */
 .form-overlay {
   position: absolute;
-  top: 22%;
+  top: 24%;
   left: 5%; /* ⬅️ Shift more to the left */
   width: 75%; /* ⬅️ Adjust width to stay within bounds */
   max-width: 500px;
