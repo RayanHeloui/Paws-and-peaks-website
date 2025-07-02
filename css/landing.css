@@ -52,7 +52,7 @@ html, body {
   bottom: 40px;              /* ⬆️ padding from bottom */
   left: 50%;                 /* Start in the center */
   transform: translateX(-50%);  /* ✅ Truly center it horizontally */
-  width: 60vw;               /* 👈 make it nice and big */
+  width: 200vw;               /* 👈 make it nice and big */
   max-width: 700px;
   z-index: 2;
 }
