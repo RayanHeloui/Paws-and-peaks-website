@@ -4,19 +4,72 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Paws and Peaks – Coming Soon</title>
-
-  <!-- ✅ Corrected CSS path -->
   <link rel="stylesheet" href="css/landing.css" />
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+  <script>
+    // Replace with your actual Firebase config
+    const firebaseConfig = {
+      apiKey: "YOUR_API_KEY",
+      authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+      databaseURL: "https://YOUR_PROJECT_ID.firebaseio.com",
+      projectId: "YOUR_PROJECT_ID",
+      storageBucket: "YOUR_PROJECT_ID.appspot.com",
+      messagingSenderId: "YOUR_SENDER_ID",
+      appId: "YOUR_APP_ID"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const database = firebase.database();
+  </script>
 </head>
+
 <body>
 
-  <!-- Background image -->
-  <div class="bg-container"></div>
+  <!-- Email box with embedded form -->
+  <div class="email-box-container">
+    <img src="images/email.box.png" alt="Email Box" class="email-box-image" />
+    <form id="subscribe-form" class="form-overlay">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
 
   <!-- Overlay assets -->
   <img src="images/comingsoon.png" alt="Coming Soon" class="coming-title" />
-  <img src="images/email.box.png" alt="Email Form" class="email-box" />
   <div class="slogan-text">Their Adventure Starts With You!</div>
+
+  <!-- Form logic -->
+  <script>
+    const form = document.getElementById('subscribe-form');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+
+      if (name && email) {
+        const newRef = database.ref('subscribers').push();
+        newRef.set({
+          name,
+          email,
+          subscribedAt: new Date().toISOString()
+        })
+        .then(() => {
+          alert("Thank you for subscribing!");
+          form.reset();
+        })
+        .catch((err) => {
+          console.error("Firebase error:", err);
+          alert("Something went wrong.");
+        });
+      } else {
+        alert("Please fill out both fields.");
+      }
+    });
+  </script>
 
 </body>
 </html>
