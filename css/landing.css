@@ -37,7 +37,7 @@ html, body {
 .coming-title {
   position: absolute;
   top: 20%;               /* 🔼 moved up from 30% */
-  right: 14%;             /* ✅ stays same – your preferred horizontal spot */
+  right: 10%;             /* ✅ stays same – your preferred horizontal spot */
   width: 90vw;            /* 🧠 increased from 80vw to make it larger */
   max-width: 1000px;      /* 🔼 slightly bigger cap */
   transform: translateY(-50%) scale(1.15); /* 👀 small zoom */
