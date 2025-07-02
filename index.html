@@ -33,25 +33,24 @@
   <div class="bg-container"></div>
 
   <!-- 📮 Email box with embedded form -->
-<div class="email-box-container">
-  <img src="images/email.box.png" alt="Email Box" class="email-box-image" />
+  <div class="email-box-container">
+    <img src="images/email.box.png" alt="Email Box" class="email-box-image" />
 
-  <!-- 🧾 Form overlaid on brown image -->
-  <form id="subscribe-form" class="form-overlay">
-    <input type="text" id="name" placeholder="Your Name" required />
-    <input type="email" id="email" placeholder="Your Email" required />
-    <button type="submit">Subscribe</button>
-  </form>
+    <!-- 🧾 Form overlaid on brown image -->
+    <form id="subscribe-form" class="form-overlay">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <button type="submit">Subscribe</button>
+    </form>
 
-  <!-- 🎉 Thank-you box overlays in same position -->
-  <div id="thank-you-box" class="thank-you-box" style="display: none;">
-    <div class="thank-you-content">
-      <p class="thank-you-heading">🎉 Thank you for signing up!</p>
-      <p class="thank-you-text">We’re thrilled to have you join the Paws & Peaks journey. Stay tuned for exciting updates!</p>
+    <!-- 🎉 Thank-you box overlays in same position -->
+    <div id="thank-you-box" class="thank-you-box" style="display: none;">
+      <div class="thank-you-content">
+        <p class="thank-you-heading">🎉 Thank you for signing up!</p>
+        <p class="thank-you-text">We’re thrilled to have you join the Paws & Peaks journey. Stay tuned for exciting updates!</p>
+      </div>
     </div>
   </div>
-</div>
-
 
   <!-- 🟠 Title and Slogan -->
   <img src="images/comingsoon.png" alt="Coming Soon" class="coming-title" />
@@ -78,7 +77,7 @@
       })
       .then(() => {
         form.style.display = 'none';
-        document.getElementById('thank-you-message').style.display = 'block';
+        document.getElementById('thank-you-box').style.display = 'flex'; // ✅ Correct ID
       })
       .catch((err) => {
         console.error("Firestore error:", err);
