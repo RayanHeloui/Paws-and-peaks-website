@@ -27,23 +27,24 @@
 
 <body>
 
-  <!-- Email box with embedded form -->
-<div class="email-box-container">
-  <img src="images/email.box.png" alt="Email Box" class="email-box-image" />
+  <!-- 🔙 Background image -->
+  <div class="bg-container"></div>
 
-  <form id="subscribe-form" class="form-overlay">
-    <input type="text" id="name" placeholder="Your Name" required />
-    <input type="email" id="email" placeholder="Your Email" required />
-    <button type="submit">Subscribe</button>
-  </form>
-</div>
+  <!-- 📮 Email box with embedded form -->
+  <div class="email-box-container">
+    <img src="images/email.box.png" alt="Email Box" class="email-box-image" />
+    <form id="subscribe-form" class="form-overlay">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
 
-
-  <!-- Overlay assets -->
+  <!-- 🟠 Title and Slogan -->
   <img src="images/comingsoon.png" alt="Coming Soon" class="coming-title" />
   <div class="slogan-text">Their Adventure Starts With You!</div>
 
-  <!-- Form logic -->
+  <!-- 📩 Form logic -->
   <script>
     const form = document.getElementById('subscribe-form');
 
