@@ -65,7 +65,7 @@ html, body {
 .form-overlay {
   position: absolute;
   top: 22%;
-  left: 12%; /* ⬅️ Shift more to the left */
+  left: 20%; /* ⬅️ Shift more to the left */
   width: 75%; /* ⬅️ Adjust width to stay within bounds */
   max-width: 500px;
   display: flex;
