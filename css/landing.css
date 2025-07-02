@@ -61,9 +61,8 @@ html, body {
   display: block;
 }
 
-/* 📝 Form + Thank You Positioned Over the Brown Box Image */
-.form-overlay,
-.thank-you-box {
+/* 📝 Form Positioning */
+.form-overlay {
   position: absolute;
   top: 24%;
   left: 5%;
@@ -109,31 +108,39 @@ html, body {
   background-color: #a65d3a;
 }
 
-/* 💖 Pink Thank You Box */
+/* 💖 Full-Screen Pink Thank You Box */
 .thank-you-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;       /* Full width of email-box-container */
+  height: 100%;      /* Full height of email-box-container */
   background-color: #FFC0CB;
-  border-radius: 20px;
-  padding: 24px;
+  padding: 40px;
+  border-radius: 0;
+  display: none;     /* Hidden by default */
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   box-sizing: border-box;
   color: #5a3d29;
-  justify-content: flex-start;
-  display: none; /* hidden by default, shown on submit */
+  z-index: 5;
 }
 
-/* 📝 Thank You Message */
+/* 📝 Thank You Text */
 .thank-you-content {
   text-align: left;
 }
 
 .thank-you-heading {
-  font-size: 1.6em;
+  font-size: 1.8em;
   font-weight: 700;
   margin-bottom: 10px;
   color: #5a3d29;
 }
 
 .thank-you-text {
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.5;
   color: #5a3d29;
 }
