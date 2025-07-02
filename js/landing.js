@@ -1,5 +1,6 @@
 <script>
   // Ensure Firestore is initialized
+  
   const db = firebase.firestore();
 
   document.getElementById('subscribe-form').addEventListener('submit', function (e) {
