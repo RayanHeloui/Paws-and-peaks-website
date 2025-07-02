@@ -36,12 +36,12 @@ html, body {
 /* Overlay: COMING SOON text */
 .coming-title {
   position: absolute;
-  top: 15%;                        /* Slightly above center line */
-  right: 3%;                       /* A bit inside from the right edge */
-  width: 120vw;                     /* Large but responsive */
-  max-width: 900px;               /* Matches .email-box */
-  transform: translateY(-50%) scale(1.1);  /* Slight zoom and vertical alignment */
-  z-index: 4;                      /* Above everything else */
+  top: 30%;
+  right: 18%; /* 🔁 was 3%, now moved left */
+  width: 80vw;
+  max-width: 900px;
+  transform: translateY(-50%) scale(1.1);
+  z-index: 4;
 }
 
 
