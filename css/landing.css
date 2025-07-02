@@ -65,34 +65,47 @@ html, body {
 .form-overlay {
   position: absolute;
   top: 22%;
-  left: 13%;
-  width: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   gap: 12px;
   align-items: center;
 }
 
-.form-overlay input,
-.form-overlay button {
+.form-overlay input {
   width: 100%;
   padding: 12px;
   font-size: 1rem;
   border-radius: 8px;
-  border: none;
+  border: 2px solid #b59c87;
+  background-color: #d7d7b3;
+  color: #7b523c;
+}
+
+.form-overlay input::placeholder {
+  color: #7b523c;
 }
 
 .form-overlay button {
-  background-color: #f77c3b;
-  color: #fff;
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
   font-weight: bold;
+  border-radius: 8px;
+  background-color: #7b523c;
+  color: #fff;
+  border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .form-overlay button:hover {
-  background-color: #ff9955;
+  background-color: #a65d3a;
 }
+
 
 /* 🧡 Bottom Slogan */
 .slogan-text {
