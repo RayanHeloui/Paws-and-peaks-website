@@ -15,66 +15,95 @@ html, body {
   width: 100%;
   height: 100%;
   background-color: #d7d7b3;
-  font-family: sans-serif;
+  font-family: 'Nostalgic Remain', sans-serif;
   position: relative;
   overflow: hidden;
 }
 
+/* 🏔 Background Mountain Image */
 .bg-container {
   position: absolute;
   inset: 0;
-
-  /* ✅ Background image */
   background: url('../images/mountain.png') no-repeat;
-  background-size: 110%; /* 👈 Make it large */
-  background-position: -700px bottom; /* 👈 Anchor bottom-left */
-  background-repeat: no-repeat;
-
+  background-size: 120%;
+  background-position: -700px bottom;
   z-index: 0;
 }
 
-/* Overlay: COMING SOON text */
+/* 🧠 COMING SOON Banner */
 .coming-title {
   position: absolute;
-  top: 16%;               /* 🔼 moved up from 30% */
-  right: 10%;             /* ✅ stays same – your preferred horizontal spot */
-  width: 90vw;            /* 🧠 increased from 80vw to make it larger */
-  max-width: 1000px;      /* 🔼 slightly bigger cap */
-  transform: translateY(-50%) scale(1.15); /* 👀 small zoom */
+  top: 12%;
+  right: 8%;
+  width: 90vw;
+  max-width: 1000px;
+  transform: translateY(-50%) scale(1.2);
   z-index: 4;
 }
 
-
-/* Overlay: Email form */
-.email-box {
+/* 📮 Email Box Image (container with form) */
+.email-box-container {
   position: absolute;
-  top: 50%;       /* 📍 Center it vertically more */
-  right: -7%;     /* ✅ Keeps it slightly off-screen */
-  width: 100vw;   /* 🧨 Double the original size */
-  max-width: 900px;
+  top: 50%;
+  right: -7%;
+  transform: translateY(-50%);
+  width: 600px;
+  max-width: 90vw;
   z-index: 3;
-  transform: translateY(-50%) scale(1.1); /* Center by height + slight zoom */
 }
 
+.email-box-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-/* Overlay: Bottom slogan */
+/* ✏️ Form over Email Box */
+.form-overlay {
+  position: absolute;
+  top: 22%;
+  left: 13%;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.form-overlay input,
+.form-overlay button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+}
+
+.form-overlay button {
+  background-color: #f77c3b;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-overlay button:hover {
+  background-color: #ff9955;
+}
+
+/* 🧡 Bottom Slogan */
 .slogan-text {
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  font-family: 'Nostalgic Remain', serif;
-  font-size: clamp(2rem, 7vw, 6rem);  /* 🔥 Responsive, takes up space */
+  font-size: clamp(2rem, 7vw, 5.5rem);
   color: #7b523c;
   text-align: center;
   text-transform: uppercase;
   z-index: 2;
-
-  width: 95vw;              /* ✅ Almost full screen */
-  max-width: 1500px;
-  white-space: nowrap;      /* ✅ Force one line */
+  width: 95vw;
+  max-width: 1600px;
+  white-space: nowrap;
   letter-spacing: 2px;
 }
-
-
-
