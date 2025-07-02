@@ -33,19 +33,23 @@
   <div class="bg-container"></div>
 
   <!-- 📮 Email box with embedded form -->
-<div class="form-overlay">
-  <form id="subscribe-form">
+<div class="email-box-container">
+  <img src="images/email.box.png" alt="Email Box" class="email-box-image" />
+
+  <!-- Keep form unchanged -->
+  <form id="subscribe-form" class="form-overlay">
     <input type="text" id="name" placeholder="Your Name" required />
     <input type="email" id="email" placeholder="Your Email" required />
     <button type="submit">Subscribe</button>
   </form>
 
-  <!-- ✅ Thank You stays inside the same visual box -->
-  <div id="thank-you-message" class="thank-you-message" style="display: none;">
+  <!-- Thank-you styled like form-overlay -->
+  <div id="thank-you-message" class="form-overlay thank-you-message" style="display: none;">
     <p>🎉 Thank you for signing up!</p>
     <p>We’re thrilled to have you join the Paws & Peaks journey. Stay tuned for exciting updates!</p>
   </div>
 </div>
+
 
 
   <!-- 🟠 Title and Slogan -->
