@@ -19,6 +19,11 @@
 
     const thankYou = document.getElementById('thank-you-box');
 
+    if (!thankYou) {
+      console.error("❌ Could not find #thank-you-box in the DOM.");
+      return;
+    }
+
     // ✅ Save to Firestore
     db.collection('subscribers').add({
       name: name,
@@ -27,7 +32,7 @@
     })
     .then(() => {
       form.style.display = 'none';
-      if (thankYou) thankYou.style.display = 'flex';
+      thankYou.style.display = 'flex';
     })
     .catch((error) => {
       console.error("Firestore error:", error);
