@@ -44,7 +44,7 @@ html, body {
   z-index: 4;
 }
 
-/* 📮 Email Box Container (with brown box background image) */
+/* 📮 Email Box Container */
 .email-box-container {
   position: absolute;
   top: 50%;
@@ -61,7 +61,7 @@ html, body {
   display: block;
 }
 
-/* 📝 Form Positioning */
+/* 📝 Form */
 .form-overlay {
   position: absolute;
   top: 24%;
@@ -75,7 +75,6 @@ html, body {
   z-index: 5;
 }
 
-/* ✍️ Input Fields */
 .form-overlay input {
   width: 100%;
   padding: 12px;
@@ -90,7 +89,6 @@ html, body {
   color: #7b523c;
 }
 
-/* 📩 Submit Button */
 .form-overlay button {
   width: 100%;
   padding: 12px;
@@ -111,13 +109,13 @@ html, body {
 /* 💖 Thank You Box */
 .thank-you-box {
   position: absolute;
-  top: 2.5%;        /* Adds top gap */
-  left: 7%;         /* Left side spacing */
-  width: 86%;       /* Reduced width to allow right gap */
-  height: 95%;      /* Slightly reduced height for top and bottom gaps */
+  top: 2.5%;
+  left: 7%;
+  width: 86%;
+  height: 95%;
   background-color: #fad2ad;
-  padding: 20px 30px; /* Adjusted padding for better spacing */
-  border-radius: 12px; /* Small rounding on edges */
+  padding: 20px 30px;
+  border-radius: 12px;
   display: none;
   flex-direction: column;
   box-sizing: border-box;
@@ -125,32 +123,29 @@ html, body {
   z-index: 5;
 }
 
-/* 📝 Thank You Content */
 .thank-you-content {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Keeps body text left-aligned */
+  align-items: flex-start;
 }
 
-/* 🐾 Heading */
 .thank-you-heading {
   font-size: 4.2rem;
   font-weight: 700;
   color: #5a3d29;
   width: 100%;
-  text-align: center;
+  text-align: left;
   margin: 0;
-  padding-top: 0; /* Removes extra space at the top */
-  margin-left: -20px; 
+  padding-top: 0;
+  padding-left: 10px;
 }
 
-/* 📄 Body Text */
 .thank-you-text {
   font-size: 1.3rem;
   line-height: 1.1;
   color: #5a3d29;
-  margin-top: 20px; /* Adds space between heading and body */
+  margin-top: 20px;
 }
 
 .thank-you-signoff {
@@ -159,7 +154,6 @@ html, body {
   font-weight: 700;
   margin-top: 10px;
 }
-
 
 /* 🧡 Bottom Slogan */
 .slogan-text {
