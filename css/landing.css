@@ -46,12 +46,14 @@ html, body {
 /* Overlay: Email form */
 .email-box {
   position: absolute;
-  top: 22vh;
-  right: 5vw;
-  width: 40vw;
-  max-width: 400px;
+  top: 160px;
+  right: -5%; /* 🔥 Push off-screen slightly */
+  width: 50vw; /* 💡 More width for visual balance */
+  max-width: 500px;
   z-index: 3;
+  transform: scale(1.05); /* Optional: Subtle enlargement */
 }
+
 
 /* Overlay: Bottom slogan */
 .slogan-text {
