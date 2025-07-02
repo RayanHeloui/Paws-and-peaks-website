@@ -47,7 +47,7 @@ html, body {
 .email-box {
   position: absolute;
   top: 50%;       /* 📍 Center it vertically more */
-  right: -10%;     /* ✅ Keeps it slightly off-screen */
+  right: -7%;     /* ✅ Keeps it slightly off-screen */
   width: 100vw;   /* 🧨 Double the original size */
   max-width: 900px;
   z-index: 3;
