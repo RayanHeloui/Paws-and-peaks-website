@@ -106,6 +106,14 @@ html, body {
   background-color: #a65d3a;
 }
 
+.thank-you-message {
+  text-align: center;
+  padding: 1.5em 1em;
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #fff; /* or adjust to match your design */
+}
+
 
 /* 🧡 Bottom Slogan */
 .slogan-text {
