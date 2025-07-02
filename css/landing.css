@@ -44,6 +44,21 @@ html, body {
   z-index: 4;
 }
 
+/* 🟤 Brown Container Inside Email Box */
+.brown-container {
+  position: absolute;
+  top: 24%;
+  left: 5%;
+  width: 75%;
+  max-width: 500px;
+  background-color: #8B5E3C;
+  border-radius: 40px 0 0 40px;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 2;
+  overflow: hidden;
+}
+
 /* 📮 Email Box Image (container with form) */
 .email-box-container {
   position: absolute;
@@ -106,10 +121,10 @@ html, body {
   background-color: #a65d3a;
 }
 
-.thank-you-message {
-  text-align: center;
-  padding: 1.5em 1em;
+.thank-you-content {
+  text-align: left;
 }
+
 
 .thank-you-heading {
   font-size: 1.4em;
@@ -125,7 +140,21 @@ html, body {
   line-height: 1.4;
 }
 
-
+/* 💖 Pink Thank You Box (hidden initially) */
+.thank-you-box {
+  background-color: #FFC0CB;
+  border-radius: 30px;
+  padding: 30px;
+  width: 95%;
+  margin-left: auto; /* leave left border visible */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  flex-direction: column;
+  gap: 10px;
+  color: #5a3d29;
+}
 
 /* 🧡 Bottom Slogan */
 .slogan-text {
