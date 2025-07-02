@@ -113,7 +113,7 @@ html, body {
   position: absolute;
   top: 0;
   left: 10%;
-  width: 90%;       /* Full width of email-box-container */
+  width: 100%;       /* Full width of email-box-container */
   height: 100%;      /* Full height of email-box-container */
   background-color: #FFC0CB;
   padding: 40px;
