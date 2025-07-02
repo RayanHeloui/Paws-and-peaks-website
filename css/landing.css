@@ -56,24 +56,21 @@ html, body {
 /* Overlay: Bottom slogan */
 .slogan-text {
   position: absolute;
-  bottom: 30px;                      /* ✅ Padding from bottom */
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Nostalgic Remain', serif;
-  font-size: 2.5rem;                /* ✅ More reasonable size */
+  font-size: clamp(2rem, 7vw, 6rem);  /* 🔥 Responsive, takes up space */
   color: #7b523c;
   text-align: center;
   text-transform: uppercase;
   z-index: 2;
-  line-height: 1.2;
-  letter-spacing: 1px;
 
-  
-  width: 90vw;                        /* ✅ Wider container */
-  max-width: 1000px;
-  white-space: nowrap;               /* ✅ Force single line */
-  overflow: hidden;
-  text-overflow: ellipsis;
+  width: 95vw;              /* ✅ Almost full screen */
+  max-width: 1500px;
+  white-space: nowrap;      /* ✅ Force one line */
+  letter-spacing: 2px;
 }
+
 
 
