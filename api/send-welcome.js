@@ -14,7 +14,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const data = await resend.emails.send({
+    const data = await resend.emails.send({ // THIS must exist
       from: 'woof@pawsandpeaks.com.au',
       to: email,
       subject: '🎉 Welcome to the Pack!',
