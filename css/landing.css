@@ -155,6 +155,15 @@ html, body {
   margin-top: 10px;
 }
 
+.paw-image {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  width: 40px;
+  height: auto;
+  opacity: 0.9;
+}
+
 /* 🧡 Bottom Slogan */
 .slogan-text {
   position: absolute;
