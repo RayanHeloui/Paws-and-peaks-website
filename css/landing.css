@@ -159,7 +159,7 @@ html, body {
 .paw-image {
   position: absolute;
   bottom: -50px;
-  right: 50px;
+  right: 60px;
   width: 250px;
   height: auto;
   opacity: 0.9;
