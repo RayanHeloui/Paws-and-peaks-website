@@ -7,11 +7,8 @@
   <link rel="stylesheet" href="css/landing.css" />
   <link rel="icon" href="images/favicon.png" type="image/png" />
 
-  <!-- Firebase SDKs -->
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-
-  <!-- Firebase Config -->
   <script>
     const firebaseConfig = {
       apiKey: "AIzaSyCLZ1-cAQfPVaz_DBJ17mukif2rWqRESGC0",
@@ -22,11 +19,8 @@
       appId: "1:1026558201114:web:c309483cf0050ac539b0a3",
       measurementId: "G-CDKGZXCPCD"
     };
-
     firebase.initializeApp(firebaseConfig);
   </script>
-  
-  <!-- Custom JS -->
   <script src="js/landing.js" defer></script>
 </head>
 
@@ -35,13 +29,11 @@
 
   <div class="email-box-container">
     <img src="images/email.box.png" alt="Email Box" class="email-box-image" />
-
     <form id="subscribe-form" class="form-overlay">
       <input type="text" id="name" placeholder="Your Name" required />
       <input type="email" id="email" placeholder="Your Email" required />
       <button type="submit">Subscribe</button>
     </form>
-
     <div id="thank-you-box" class="thank-you-box" style="display: none;">
       <div class="thank-you-content">
         <p class="thank-you-heading">WELCOME TO THE PACK</p>
