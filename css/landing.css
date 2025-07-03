@@ -157,8 +157,8 @@ html, body {
 
 .paw-image {
   position: absolute;
-  bottom: 15px;
-  right: 120px;
+  bottom: 5px;
+  right: 100px;
   width: 200px;
   height: auto;
   opacity: 0.9;
