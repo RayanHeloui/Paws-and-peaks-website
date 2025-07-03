@@ -64,32 +64,51 @@
 
   <!-- 📩 Form logic -->
   <script>
-    document.getElementById('subscribe-form').addEventListener('submit', function (e) {
-      e.preventDefault();
+  document.getElementById('subscribe-form').addEventListener('submit', async function (e) {
+    e.preventDefault();
 
-      const form = e.target;
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
+    const form = e.target;
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
 
-      if (!name || !email) {
-        alert("Please fill out both fields.");
-        return;
-      }
+    if (!name || !email) {
+      alert("Please fill out both fields.");
+      return;
+    }
 
-      db.collection('subscribers').add({
+    try {
+      // Save to Firestore
+      await db.collection('subscribers').add({
         name: name,
         email: email,
         subscribedAt: firebase.firestore.FieldValue.serverTimestamp()
-      })
-      .then(() => {
-        form.style.display = 'none';
-        document.getElementById('thank-you-box').style.display = 'flex';
-      })
-      .catch((err) => {
-        console.error("Firestore error:", err);
-        alert("Something went wrong. Please try again.");
       });
-    });
-  </script>
+
+      // Send welcome email via Resend API
+      const response = await fetch('/api/send-welcome', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email })
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        console.error("Resend error:", result);
+        alert("Signed up, but email failed to send.");
+      } else {
+        console.log("✅ Email sent:", result);
+      }
+
+      // Show thank you
+      form.style.display = 'none';
+      document.getElementById('thank-you-box').style.display = 'flex';
+    } catch (err) {
+      console.error("❌ Error:", err);
+      alert("Something went wrong. Please try again.");
+    }
+  });
+</script>
+
 </body>
 </html>
