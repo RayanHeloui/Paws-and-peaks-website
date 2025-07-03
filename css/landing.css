@@ -109,7 +109,7 @@ html, body {
 /* 💖 Thank You Box */
 .thank-you-box {
   position: absolute;
-  top: 1%;
+  top: 0;
   left: 5%;
   width: 90%;
   height: 100%;
@@ -163,7 +163,7 @@ html, body {
 .paw-image {
   position: absolute;
   bottom: -60px;
-  left: 500px;
+  left: 450px;
   right: 0;
   width: 250px;
   height: auto;
