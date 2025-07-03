@@ -133,7 +133,7 @@ html, body {
 .thank-you-heading {
   font-size: 4.2rem;
   font-weight: 700;
-  color: #5a3d29;
+  color: #fad2ad;
   width: 100%;
   text-align: left;
   margin: 0;
@@ -157,9 +157,9 @@ html, body {
 
 .paw-image {
   position: absolute;
-  bottom: 5px;
-  right: 100px;
-  width: 200px;
+  bottom: -20px;
+  right: 60px;
+  width: 250px;
   height: auto;
   opacity: 0.9;
 }
