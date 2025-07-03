@@ -38,7 +38,13 @@ document.getElementById('subscribe-form').addEventListener('submit', async funct
       body: JSON.stringify({ name, email })
     });
 
-    const result = await response.json();
+    let result;
+try {
+  result = await response.json();
+} catch {
+  result = { message: 'Non-JSON response', raw: await response.text() };
+}
+
 
     if (!response.ok) {
       console.error("❌ Resend email error:", result);
