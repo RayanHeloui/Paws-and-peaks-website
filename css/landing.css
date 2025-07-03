@@ -121,6 +121,7 @@ html, body {
   box-sizing: border-box;
   color: #5a3d29;
   z-index: 5;
+  overflow: hidden;
 }
 
 .thank-you-content {
