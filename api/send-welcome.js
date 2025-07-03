@@ -14,13 +14,13 @@ export default async function handler(req, res) {
   }
 
   try {
-    const data = await resend.emails.send({ // THIS must exist
+    const data = await resend.emails.send({
       from: 'woof@pawsandpeaks.com.au',
       to: email,
-      subject: '🎉 Welcome to the Pack!',
+      subject: 'Welcome to the Pack!',
       html: `
         <div style="font-family: sans-serif;">
-          <h1>Welcome ${name || 'friend'}! 🐶</h1>
+          <h1>Welcome ${name || 'friend'}!</h1>
           <p>We're excited to have you join the adventure!</p>
         </div>
       `,
@@ -28,7 +28,6 @@ export default async function handler(req, res) {
 
     return res.status(200).json({ message: 'Email sent successfully', data });
   } catch (error) {
-    console.error("🔥 Resend API Error:", error);
     return res.status(500).json({ message: 'Email failed', error: error.message || error });
   }
 }
