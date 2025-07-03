@@ -108,7 +108,7 @@ html, body {
 
 /* 💖 Thank You Box */
 .thank-you-box {
-  position: relative;
+  position: absolute;
   top: 1%;
   left: 5%;
   width: 90%;
