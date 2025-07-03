@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Paws and Peaks – Coming Soon</title>
   <link rel="stylesheet" href="css/landing.css" />
-  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="icon" href="images/favicon.png" type="image/png" />
 
   <!-- Firebase SDKs -->
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 
+  <!-- Firebase Config -->
   <script>
     const firebaseConfig = {
       apiKey: "AIzaSyCLZ1-cAQfPVaz_DBJ17mukif2rWqRESGC0",
@@ -23,92 +24,39 @@
     };
 
     firebase.initializeApp(firebaseConfig);
-    const db = firebase.firestore();
   </script>
+  
+  <!-- Custom JS -->
+  <script src="js/landing.js" defer></script>
 </head>
 
 <body>
-  <!-- 🔙 Background image -->
   <div class="bg-container"></div>
 
-  <!-- 📮 Email box with embedded form -->
   <div class="email-box-container">
     <img src="images/email.box.png" alt="Email Box" class="email-box-image" />
 
-    <!-- 🧾 Form overlaid on brown image -->
     <form id="subscribe-form" class="form-overlay">
       <input type="text" id="name" placeholder="Your Name" required />
       <input type="email" id="email" placeholder="Your Email" required />
       <button type="submit">Subscribe</button>
     </form>
 
-    <!-- 🎉 Thank-you box overlays in same position -->
-<div id="thank-you-box" class="thank-you-box" style="display: none;">
-  <div class="thank-you-content">
-    <p class="thank-you-heading">WELCOME TO THE PACK</p>
-    <p class="thank-you-text">
-      Thank you for wanting to be part of this adventure.<br><br>
-      Your dog will thank you.<br><br>
-      Stay tuned, the journey’s just beginning...<br><br>
-      <span class="thank-you-signoff">Paws and Peaks Team</span>
-    </p>
-    <img src="images/paw.png" alt="Paw" class="paw-image" />
-  </div>
-</div>
-
+    <div id="thank-you-box" class="thank-you-box" style="display: none;">
+      <div class="thank-you-content">
+        <p class="thank-you-heading">WELCOME TO THE PACK</p>
+        <p class="thank-you-text">
+          Thank you for wanting to be part of this adventure.<br><br>
+          Your dog will thank you.<br><br>
+          Stay tuned, the journey’s just beginning...<br><br>
+          <span class="thank-you-signoff">Paws and Peaks Team</span>
+        </p>
+        <img src="images/paw.png" alt="Paw" class="paw-image" />
+      </div>
+    </div>
   </div>
 
-  <!-- 🟠 Title and Slogan -->
   <img src="images/comingsoon.png" alt="Coming Soon" class="coming-title" />
   <div class="slogan-text">Their Adventure Starts With You!</div>
-
-  <!-- 📩 Form logic -->
-  <script>
-  document.getElementById('subscribe-form').addEventListener('submit', async function (e) {
-    e.preventDefault();
-
-    const form = e.target;
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-
-    if (!name || !email) {
-      alert("Please fill out both fields.");
-      return;
-    }
-
-    try {
-      // Save to Firestore
-      await db.collection('subscribers').add({
-        name: name,
-        email: email,
-        subscribedAt: firebase.firestore.FieldValue.serverTimestamp()
-      });
-
-      // Send welcome email via Resend API
-      const response = await fetch('/api/send-welcome', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email })
-      });
-
-      const result = await response.json();
-
-      if (!response.ok) {
-        console.error("Resend error:", result);
-        alert("Signed up, but email failed to send.");
-      } else {
-        console.log("✅ Email sent:", result);
-      }
-
-      // Show thank you
-      form.style.display = 'none';
-      document.getElementById('thank-you-box').style.display = 'flex';
-    } catch (err) {
-      console.error("❌ Error:", err);
-      alert("Something went wrong. Please try again.");
-    }
-  });
-</script>
-
 </body>
 </html>
