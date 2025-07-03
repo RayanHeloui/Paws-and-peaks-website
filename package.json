@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "resend": "^0.9.1"
   }
