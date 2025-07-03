@@ -15,7 +15,7 @@ export default async function handler(req, res) {
 
   try {
     const data = await resend.emails.send({
-      from: 'onboarding@resend.dev', // This must be allowed in Resend sender settings
+      from: 'onboarding@resend.dev',
       to: email,
       subject: '🎉 Welcome to the Pack!',
       html: `
@@ -23,12 +23,12 @@ export default async function handler(req, res) {
           <h1>Welcome ${name || 'friend'}! 🐶</h1>
           <p>We're excited to have you join the adventure!</p>
         </div>
-      `
+      `,
     });
 
     return res.status(200).json({ message: 'Email sent successfully', data });
   } catch (error) {
-    console.error("🔥 Resend API Error:", error); // ADD THIS
-    return res.status(500).json({ message: 'Email failed', error });
+    console.error("🔥 Resend API Error:", error);
+    return res.status(500).json({ message: 'Email failed', error: error.message || error });
   }
 }
