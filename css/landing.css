@@ -20,7 +20,6 @@ html, body {
   position: relative;
 }
 
-/* 🏔 Background Mountain Image */
 .bg-container {
   position: absolute;
   top: 0;
@@ -33,7 +32,6 @@ html, body {
   z-index: 0;
 }
 
-/* 🧠 COMING SOON Banner */
 .coming-title {
   position: absolute;
   top: 12%;
@@ -44,7 +42,6 @@ html, body {
   z-index: 4;
 }
 
-/* 📮 Email Box Container */
 .email-box-container {
   position: absolute;
   top: 50%;
@@ -61,7 +58,6 @@ html, body {
   display: block;
 }
 
-/* 📝 Form */
 .form-overlay {
   position: absolute;
   top: 24%;
@@ -106,7 +102,6 @@ html, body {
   background-color: #a65d3a;
 }
 
-/* 💖 Thank You Box */
 .thank-you-box {
   position: absolute;
   top: 1%;
@@ -171,7 +166,6 @@ html, body {
   pointer-events: none;
 }
 
-/* 🧡 Bottom Slogan */
 .slogan-text {
   position: absolute;
   bottom: 20px;
