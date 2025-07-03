@@ -47,9 +47,11 @@ html, body {
 /* 📮 Email Box Container */
 .email-box-container {
   position: absolute;
+  top: 50%;
+  right: -7%;
+  transform: translateY(-50%);
   width: 900px;
   max-width: 100%;
-  margin: 0 auto;
   z-index: 3;
 }
 
