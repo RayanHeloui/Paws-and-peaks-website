@@ -16,8 +16,8 @@ html, body {
   height: 100%;
   background-color: #d7d7b3;
   font-family: 'Nostalgic Remain', sans-serif;
+  overflow-x: hidden;
   position: relative;
-  overflow: hidden;
 }
 
 /* 🏔 Background Mountain Image */
@@ -46,7 +46,7 @@ html, body {
 
 /* 📮 Email Box Container */
 .email-box-container {
-  position: relative; /* Changed from absolute to relative */
+  position: relative;
   width: 900px;
   max-width: 100%;
   margin: 0 auto;
@@ -112,10 +112,11 @@ html, body {
   width: 100%;
   height: 100%;
   background-color: #ac987c;
-  padding: 20px 30px;
   border-radius: 12px;
+  padding: 20px 30px;
   display: none;
   flex-direction: column;
+  justify-content: flex-start;
   box-sizing: border-box;
   color: #5a3d29;
   z-index: 5;
@@ -123,29 +124,31 @@ html, body {
 }
 
 .thank-you-content {
+  position: relative;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .thank-you-heading {
   font-size: 4.2rem;
   font-weight: 700;
   color: #d76c29;
-  width: 100%;
   text-align: left;
-  margin: 0;
-  padding-top: 0;
+  width: 100%;
   padding-left: 10px;
   -webkit-text-stroke: 0.5px #6c2900;
 }
 
 .thank-you-text {
   font-size: 1.3rem;
-  line-height: 1.1;
+  line-height: 1.2;
   color: #5a3d29;
   margin-top: 20px;
+  padding-left: 10px;
 }
 
 .thank-you-signoff {
@@ -159,9 +162,10 @@ html, body {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 250px; /* Adjust size as needed */
+  width: 250px;
   height: auto;
   opacity: 0.9;
+  pointer-events: none;
 }
 
 /* 🧡 Bottom Slogan */
