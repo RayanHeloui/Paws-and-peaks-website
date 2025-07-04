@@ -214,19 +214,25 @@ input, button {
     z-index: 4;
   }
 
-  .email-box-container {
-    position: relative;
-    width: 90%;
-    margin: 100px auto 40px;
-    z-index: 3;
-  }
+.email-box-container {
+  position: relative;
+  width: 90%;
+  height: 300px; /* ⬅️ Custom height for taller brown box */
+  margin: 100px auto 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
 
-  .email-box-image {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-    display: block;
-  }
+.email-box-image {
+  width: 100%;
+  height: 100%; /* ⬅️ Fills the new height */
+  border-radius: 20px;
+  display: block;
+  object-fit: cover;
+}
+
 
   .form-overlay {
     position: absolute;
