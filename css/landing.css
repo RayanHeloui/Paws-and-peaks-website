@@ -282,6 +282,7 @@ input, button {
   color: #5a3d29;
   text-align: center;
   gap: 10px;
+  padding-top: 10px;
 }
 
 .thank-you-content {
