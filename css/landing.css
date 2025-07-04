@@ -265,41 +265,45 @@ input, button {
     text-align: center;
   }
 
-  .thank-you-box {
-    position: absolute;
-    top: 20%;
-    left: 7%;
-    width: 86%;
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    z-index: 5;
-    color: #5a3d29;
-    text-align: center;
-    padding: 0;
-    gap: 4px;
-  }
+.thank-you-box {
+  position: absolute;
+  top: 20%;
+  left: 7%;
+  width: 86%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 5;
+  color: #5a3d29;
+  text-align: center;
+  padding: 0;
+  gap: 0; /* <- remove spacing between children */
+}
 
-  .thank-you-content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
+.thank-you-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 0;
+  margin: 0;
+  gap: 4px;
+}
 
-  .thank-you-heading {
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: #d76c29;
-    -webkit-text-stroke: 0.4px #6c2900;
-    text-align: center;
-    margin: 0;
-    padding-top: 4px;
-  }
+.thank-you-heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #d76c29;
+  -webkit-text-stroke: 0.4px #6c2900;
+  text-align: center;
+  margin: 0; /* <- removes spacing above */
+  padding: 0; /* <- removes internal space */
+  line-height: 1; /* <- brings text closer to top */
+}
 
   .thank-you-text {
     font-size: 1rem;
