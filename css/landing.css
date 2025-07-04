@@ -293,23 +293,26 @@ input, button {
 }
 
 .thank-you-heading {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: #d76c29;
   -webkit-text-stroke: 0.4px #6c2900;
-  margin-bottom: 10px;
+  margin: 6px 0 8px;
 }
 
 .thank-you-text {
   font-size: 1rem;
   line-height: 1.4;
+  margin: 0;
+  padding: 0;
 }
 
 .thank-you-signoff {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
-  margin-top: 8px;
+  margin-top: 6px;
 }
+
 
 .paw-image {
   width: 60px;
