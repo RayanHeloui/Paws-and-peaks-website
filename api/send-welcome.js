@@ -1,3 +1,5 @@
+import fs from 'fs';
+import path from 'path';
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -14,16 +16,18 @@ export default async function handler(req, res) {
   }
 
   try {
+    // Read email template
+    const filePath = path.resolve('./emails/welcome.html');
+    let emailHtml = fs.readFileSync(filePath, 'utf8');
+
+    // Optional: Replace {{name}} placeholders if used in template
+    emailHtml = emailHtml.replace(/{{name}}/g, name || 'friend');
+
     const data = await resend.emails.send({
       from: 'woof@pawsandpeaks.com.au',
       to: email,
       subject: 'Welcome to the Pack!',
-      html: `
-        <div style="font-family: sans-serif;">
-          <h1>Welcome ${name || 'friend'}!</h1>
-          <p>We're excited to have you join the adventure!</p>
-        </div>
-      `,
+      html: emailHtml,
     });
 
     return res.status(200).json({ message: 'Email sent successfully', data });
