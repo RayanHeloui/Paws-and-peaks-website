@@ -215,10 +215,12 @@ input, button {
   }
 
 .email-box-container {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 90%;
-  height: 300px; /* taller box */
-  margin: 100px auto 40px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
