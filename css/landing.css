@@ -273,15 +273,14 @@ input, button {
   top: 24%;
   left: 7%;
   width: 86%;
-  height: auto;
-  display: flex;
+  background-color: transparent;
+  display: none;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   z-index: 5;
   color: #5a3d29;
   text-align: center;
-  padding: 20px 16px;
   gap: 10px;
 }
 
@@ -290,28 +289,31 @@ input, button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
-
 
 .thank-you-heading {
   font-size: 1.7rem;
-  font-weight: bold;
+  font-weight: 700;
   color: #d76c29;
   -webkit-text-stroke: 0.4px #6c2900;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .thank-you-text {
   font-size: 1rem;
-  line-height: 1.5;
-  padding: 0 8px;
+  line-height: 1.4;
 }
 
 .thank-you-signoff {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  margin-top: 12px;
+  margin-top: 8px;
+}
+
+.paw-image {
+  width: 60px;
+  height: auto;
+  margin-top: 15px;
 }
 
 .paw-image {
