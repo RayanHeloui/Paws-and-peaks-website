@@ -217,7 +217,7 @@ input, button {
 .email-box-container {
   position: relative;
   width: 90%;
-  height: 300px; /* ⬅️ Custom height for taller brown box */
+  height: 300px; /* taller box */
   margin: 100px auto 40px;
   display: flex;
   align-items: center;
