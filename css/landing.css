@@ -194,18 +194,26 @@ input, button {
 /* 🧙‍♂️ RESPONSIVE MAGIC BELOW */
 @media (max-width: 768px) {
   .bg-container {
-    background-size: cover;
+    background-size: 100%;
     background-position: center bottom;
+  }
+
+  .coming-title {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    width: 85vw;
+    max-width: 100%;
+    margin: 20px auto 0;
+    display: block;
+    z-index: 2;
   }
 
   .email-box-container {
     position: relative;
-    top: auto;
-    right: auto;
-    left: auto;
-    transform: none;
     width: 90%;
-    margin: 40px auto 20px;
+    margin: 40px auto;
     z-index: 3;
   }
 
@@ -213,11 +221,12 @@ input, button {
     width: 100%;
     height: auto;
     border-radius: 20px;
+    display: block;
   }
 
   .form-overlay {
     position: absolute;
-    top: 22%;
+    top: 24%;
     left: 7%;
     width: 86%;
     transform: none;
@@ -234,18 +243,6 @@ input, button {
     font-size: 1rem;
   }
 
-  .coming-title {
-    position: relative;
-    top: auto;
-    right: auto;
-    transform: none;
-    width: 85vw;
-    max-width: 100%;
-    margin: 40px auto 20px;
-    display: block;
-    z-index: 2;
-  }
-
   .slogan-text {
     font-size: 4.5vw;
     white-space: nowrap;
@@ -253,6 +250,10 @@ input, button {
     text-overflow: ellipsis;
     bottom: 30px;
     padding: 0 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
   }
 
   .thank-you-box {
