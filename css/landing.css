@@ -206,17 +206,18 @@ input, button {
 }
 
 
-  .coming-title {
-    position: relative;
-    top: auto;
-    right: auto;
-    transform: none;
-    width: 85vw;
-    max-width: 100%;
-    margin: 20px auto 0;
-    display: block;
-    z-index: 2;
-  }
+.coming-title {
+  position: relative;
+  top: 0;
+  right: auto;
+  transform: none;
+  width: 85vw;
+  max-width: 100%;
+  margin: 10px auto 0;
+  display: block;
+  z-index: 2;
+}
+
 
   .email-box-container {
     position: relative;
