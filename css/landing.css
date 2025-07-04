@@ -274,14 +274,14 @@ input, button {
   left: 7%;
   width: 86%;
   background-color: transparent;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   z-index: 5;
   color: #5a3d29;
   text-align: center;
-  padding: 0;
+  padding-top: 20px;
   gap: 8px;
 }
 
@@ -293,16 +293,12 @@ input, button {
 }
 
 .thank-you-heading {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
   font-size: 1.6rem;
   font-weight: 700;
   color: #d76c29;
   -webkit-text-stroke: 0.4px #6c2900;
   text-align: center;
-  margin: -15px 0 8px;
+  margin-bottom: 10px;
   padding: 0;
 }
 
