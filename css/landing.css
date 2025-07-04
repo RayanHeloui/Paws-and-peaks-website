@@ -202,20 +202,36 @@ input, button {
     position: relative;
     top: auto;
     right: auto;
+    left: auto;
     transform: none;
     width: 90%;
-    margin: 0 auto;
-    padding-top: 20px;
+    margin: 40px auto 20px;
+    z-index: 3;
+  }
+
+  .email-box-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
   }
 
   .form-overlay {
-    position: relative;
-    top: auto;
-    left: auto;
+    position: absolute;
+    top: 22%;
+    left: 7%;
+    width: 86%;
     transform: none;
-    width: 100%;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 12px;
+    z-index: 4;
+  }
+
+  .form-overlay input,
+  .form-overlay button {
+    width: 100%;
+    font-size: 1rem;
   }
 
   .coming-title {
@@ -223,17 +239,20 @@ input, button {
     top: auto;
     right: auto;
     transform: none;
-    width: 80vw;
+    width: 85vw;
+    max-width: 100%;
+    margin: 40px auto 20px;
     display: block;
-    margin: 0 auto;
-    margin-top: 40px;
+    z-index: 2;
   }
 
   .slogan-text {
-    font-size: 6vw;
-    white-space: normal;
-    padding: 10px;
-    bottom: 10px;
+    font-size: 4.5vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    bottom: 30px;
+    padding: 0 10px;
   }
 
   .thank-you-box {
