@@ -281,7 +281,7 @@ input, button {
   z-index: 5;
   color: #5a3d29;
   text-align: center;
-  padding: 10px 10px 0;
+  padding: 0;
   gap: 8px;
 }
 
