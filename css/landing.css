@@ -270,7 +270,7 @@ input, button {
 
 .thank-you-box {
   position: absolute;
-  top: 24%;
+  top: 20%;
   left: 7%;
   width: 86%;
   background-color: transparent;
@@ -281,8 +281,8 @@ input, button {
   z-index: 5;
   color: #5a3d29;
   text-align: center;
-  gap: 10px;
-  padding-top: 10px;
+  padding: 10px 10px 0;
+  gap: 8px;
 }
 
 .thank-you-content {
