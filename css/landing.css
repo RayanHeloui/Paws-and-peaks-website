@@ -393,7 +393,7 @@ input, button {
   }
 
   .bg-container {
-    background-size: contain;
-    background-position: -50% bottom;
+    background-size: 110%;
+    background-position: left bottom;
   }
 }
