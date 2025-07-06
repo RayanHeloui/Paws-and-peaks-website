@@ -392,8 +392,9 @@ input, button {
     text-align: center;
   }
 
-  .bg-container {
-    background-size: 110%;
-    background-position: left bottom;
-  }
+.bg-container {
+  background-size: 85%;             /* Smaller mountain */
+  background-position: -10% bottom; /* Shift left beyond visible edge */
+  background-repeat: no-repeat;
+}
 }
