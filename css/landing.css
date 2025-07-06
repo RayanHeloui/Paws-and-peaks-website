@@ -354,7 +354,7 @@ input, button {
 
   .email-box-container {
     top: 50%;
-    left: 60%;
+    left: 80%;
     transform: translate(-50%, -50%) scale(0.75);
     width: 70%;
     height: auto;
