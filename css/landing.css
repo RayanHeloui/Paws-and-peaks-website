@@ -266,7 +266,7 @@ input, button {
 
   .slogan-line2 {
     position: absolute;
-    top: 180px; /* Adjust to sit over mountain */
+    top: 300px; /* Adjust to sit over mountain */
     left: 50%;
     transform: translateX(-50%);
     font-size: 4.8vw;
