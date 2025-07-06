@@ -353,7 +353,7 @@ input, button {
   }
 
   .email-box-container {
-    top: 54%;
+    top: 65%;
     left: 75%; /* ⬅️ Move right */
     transform: translate(-50%, -50%);
     width: 40%;  /* ⬅️ Narrower */
