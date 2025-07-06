@@ -376,7 +376,7 @@ input, button {
   .form-overlay {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -50;
   width: 100%;
   transform: none;
   display: flex;
@@ -385,7 +385,7 @@ input, button {
   justify-content: center;
   height: 100%;          /* ✅ Stretch to fill the container */
   gap: 12px;
-  padding-right: 8%;
+  
   z-index: 4;
 }
   
