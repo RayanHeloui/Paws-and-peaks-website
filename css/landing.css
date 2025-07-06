@@ -345,7 +345,7 @@ input, button {
   }
 
     .coming-title {
-    width: 60vw;
+    width: 30vw;
     top: 30px;
     left: 50%;
     transform: translateX(-50%) scale(0.9);
