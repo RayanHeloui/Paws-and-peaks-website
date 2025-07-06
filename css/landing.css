@@ -283,7 +283,7 @@ input, button {
     position: absolute;
     top: 0;
     left: 0;
-    width: 120%;
+    width: 100%;
     background-color: transparent;
     display: flex;
     flex-direction: column;
