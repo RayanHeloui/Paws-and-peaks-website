@@ -253,17 +253,26 @@ input, button {
     font-size: 1rem;
   }
 
-  .slogan-text {
-    font-size: 4.5vw;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    bottom: 30px;
-    padding: 0 10px;
+  .slogan-line1 {
     position: absolute;
+    top: 115px;
+    left: 20px;
+    font-size: 4.8vw;
+    color: #5a3d29;
+    font-weight: bold;
+    z-index: 5;
+  }
+
+  .slogan-line2 {
+    position: absolute;
+    top: 180px; /* Adjust to sit over mountain */
     left: 50%;
     transform: translateX(-50%);
-    text-align: center;
+    font-size: 4.8vw;
+    color: #5a3d29;
+    font-weight: bold;
+    opacity: 0.8;
+    z-index: 2; /* Slightly behind content */
   }
 
   .thank-you-box {
