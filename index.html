@@ -2,11 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Paws and Peaks – Coming Soon</title>
-  <link rel="stylesheet" href="css/landing.css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Language" content="en" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  
+  <title>Paws and Peaks: Adventure Gear for Dogs & Humans</title>
+  <meta name="description" content="Join Paws and Peaks for premium adventure gear tailored for dogs and their human companions. Sign up now to be the first to know about our launch!" />
+  <meta name="keywords" content="Paws and Peaks, dog hiking gear, dog outdoor brand, adventure dogs, dog gear, pet lifestyle" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.pawsandpeaks.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Paws and Peaks – Coming Soon" />
+  <meta property="og:description" content="Join the pack. Paws and Peaks is an outdoor brand for dogs and their humans." />
+  <meta property="og:image" content="https://www.pawsandpeaks.com/images/og-image.jpg" />
+  <meta property="og:url" content="https://www.pawsandpeaks.com/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Paws and Peaks – Adventure Awaits" />
+  <meta name="twitter:description" content="Get ready for something pawsome. A new outdoor brand for dogs and humans is coming soon." />
+  <meta name="twitter:image" content="https://www.pawsandpeaks.com/images/og-image.jpg" />
+
+  <!-- Favicon -->
   <link rel="icon" href="images/favicon.png" type="image/png" />
 
+  <!-- Fonts and CSS -->
+  <link rel="stylesheet" href="css/landing.css" />
+  <link rel="preload" href="fonts/NostalgicRemain-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Paws and Peaks",
+    "url": "https://www.pawsandpeaks.com",
+    "logo": "https://www.pawsandpeaks.com/images/logo.png",
+    "sameAs": [
+      "https://www.facebook.com/pawsandpeaks",
+      "https://www.instagram.com/pawsandpeaks"
+    ]
+  }
+  </script>
+
+  <!-- Firebase -->
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
   <script>
@@ -28,12 +73,14 @@
   <div class="bg-container"></div>
 
   <div class="email-box-container">
-    <img src="images/email.box.png" alt="Email Box" class="email-box-image" />
-    <form id="subscribe-form" class="form-overlay">
+    <img src="images/email.box.png" alt="Dog-themed Email Sign-up Box" class="email-box-image" />
+    
+    <form id="subscribe-form" class="form-overlay" aria-label="Subscription Form">
       <input type="text" id="name" placeholder="Your Name" required />
       <input type="email" id="email" placeholder="Your Email" required />
       <button type="submit">Subscribe</button>
     </form>
+
     <div id="thank-you-box" class="thank-you-box" style="display: none;">
       <div class="thank-you-content">
         <p class="thank-you-heading">WELCOME TO THE PACK</p>
@@ -43,17 +90,16 @@
           Stay tuned, the journey’s just beginning...<br><br>
           <span class="thank-you-signoff">Paws and Peaks Team</span>
         </p>
-        <img src="images/paw.png" alt="Paw" class="paw-image" />
+        <img src="images/paw.png" alt="Paw Logo" class="paw-image" />
       </div>
     </div>
   </div>
 
-  <img src="images/comingsoon.png" alt="Coming Soon" class="coming-title" />
-<div class="slogan-text">
-  <span class="slogan-line1">THEIR ADVENTURE</span>
-  <span class="slogan-line2">STARTS WITH YOU</span>
-</div>
+  <img src="images/comingsoon.png" alt="Coming Soon - Paws and Peaks" class="coming-title" />
 
-
+  <div class="slogan-text">
+    <span class="slogan-line1">THEIR ADVENTURE</span>
+    <span class="slogan-line2">STARTS WITH YOU</span>
+  </div>
 </body>
 </html>
