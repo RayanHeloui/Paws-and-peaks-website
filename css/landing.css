@@ -344,12 +344,11 @@ input, button {
     overflow-x: hidden;
   }
 
-  /* ✅ Unified container: image + form + thank you box */
   .email-box-container {
     top: 50%;
-    left: 60%; /* shifts block right */
-    transform: translate(-50%, -50%) scale(0.85); /* shrink + center */
-    width: 85%;
+    left: 60%;
+    transform: translate(-50%, -50%) scale(0.75); /* ✅ Shrinks whole block */
+    width: 70%; /* ⬅️ Smaller */
     height: auto;
     flex-direction: column;
   }
@@ -363,13 +362,18 @@ input, button {
     transform: none;
   }
 
-  /* ✅ Responsive slogan text */
+  .form-overlay input,
+  .form-overlay button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
   .slogan-line1,
   .slogan-line2 {
     position: static;
     display: block;
     text-align: center;
-    font-size: 6vw;
+    font-size: 5vw;
     margin: 0 auto;
   }
 
@@ -380,7 +384,6 @@ input, button {
     text-align: center;
   }
 
-  /* ✅ Mountain background (unchanged, as requested) */
   .bg-container {
     background-size: contain;
     background-position: 55% bottom;
