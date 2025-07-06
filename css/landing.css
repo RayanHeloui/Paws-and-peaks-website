@@ -268,7 +268,7 @@ input, button {
 
   .thank-you-box {
     position: absolute;
-    top: 5%;
+    top: 0;
     left: 7%;
     width: 86%;
     background-color: transparent;
