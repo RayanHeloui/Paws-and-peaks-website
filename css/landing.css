@@ -340,44 +340,49 @@ input, button {
 }
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
-  /* Prevent overflow breaking layout in landscape mode */
   body {
     overflow-x: hidden;
   }
 
+  /* ✅ Unified container: image + form + thank you box */
   .email-box-container {
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 60%; /* shifts block right */
+    transform: translate(-50%, -50%) scale(0.85); /* shrink + center */
+    width: 85%;
     height: auto;
     flex-direction: column;
   }
 
-  .form-overlay {
-    position: static;
-    transform: none;
+  .form-overlay,
+  .thank-you-box {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 10px 0;
+    transform: none;
   }
 
+  /* ✅ Responsive slogan text */
   .slogan-line1,
   .slogan-line2 {
     position: static;
+    display: block;
     text-align: center;
     font-size: 6vw;
     margin: 0 auto;
-    display: block;
   }
 
   .slogan-text {
     position: static;
-    padding: 10px 0;
     width: 100%;
+    padding: 10px 0;
     text-align: center;
   }
 
-.bg-container {
-  background-size: contain;
-  background-position: 55% bottom; /* ⬅️ Moves image slightly to the right */
-}
+  /* ✅ Mountain background (unchanged, as requested) */
+  .bg-container {
+    background-size: contain;
+    background-position: 55% bottom;
+  }
 }
