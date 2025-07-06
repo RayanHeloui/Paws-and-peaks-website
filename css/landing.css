@@ -177,20 +177,8 @@ input, button {
   pointer-events: none;
 }
 
-.slogan-text {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-  width: 95vw;
-  max-width: 1600px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
 
-/*.slogan-text {
+.slogan-text {
   position: absolute;
   bottom: 20px;
   left: 50%;
