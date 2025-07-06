@@ -354,11 +354,15 @@ input, button {
 
   .email-box-container {
     top: 50%;
-    left: 68%;
-    transform: translate(-50%, -50%) scale(0.75);
-    width: 40%;
-    height: auto;
+    left: 68%; /* ⬅️ Move right */
+    transform: translate(-50%, -50%);
+    width: 40%;  /* ⬅️ Narrower */
+    height: 300px; /* ⬅️ Force height like your portrait style */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    z-index: 3;
   }
 
   .email-box-image {
