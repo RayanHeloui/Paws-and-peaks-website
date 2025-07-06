@@ -344,6 +344,14 @@ input, button {
     overflow-x: hidden;
   }
 
+    .coming-title {
+    width: 60vw;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.9);
+    z-index: 4;
+  }
+
   .email-box-container {
     top: 50%;
     left: 60%;
