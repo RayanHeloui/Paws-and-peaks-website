@@ -354,7 +354,7 @@ input, button {
 
   .email-box-container {
     top: 50%;
-    left: 68%; /* ⬅️ Move right */
+    left: 75%; /* ⬅️ Move right */
     transform: translate(-50%, -50%);
     width: 40%;  /* ⬅️ Narrower */
     height: 300px; /* ⬅️ Force height like your portrait style */
