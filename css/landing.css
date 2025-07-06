@@ -373,7 +373,21 @@ input, button {
     border-radius: 20px;
   }
 
-  .form-overlay,
+  .form-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* ✅ Center horizontally */
+  justify-content: center;
+  height: 100%;          /* ✅ Stretch to fill the container */
+  gap: 12px;
+  z-index: 4;
+}
+  
   .thank-you-box {
     position: absolute;
     top: 0;
@@ -381,12 +395,13 @@ input, button {
     width: 100%;
     transform: none;
   }
-
-  .form-overlay input,
-  .form-overlay button {
-    font-size: 0.9rem;
-    padding: 10px;
-  }
+  
+.form-overlay input,
+.form-overlay button {
+  width: 85%;           /* ✅ Smaller width for nice padding */
+  font-size: 0.9rem;
+  padding: 10px;
+}
 
   .slogan-line1,
   .slogan-line2 {
