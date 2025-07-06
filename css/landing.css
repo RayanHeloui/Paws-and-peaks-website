@@ -376,8 +376,8 @@ input, button {
     text-align: center;
   }
 
-  .bg-container {
-    background-size: contain;
-    background-position: center bottom;
-  }
+.bg-container {
+  background-size: contain;
+  background-position: 55% bottom; /* ⬅️ Moves image slightly to the right */
+}
 }
