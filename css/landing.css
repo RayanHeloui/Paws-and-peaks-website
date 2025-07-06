@@ -394,7 +394,7 @@ input, button {
 
 .bg-container {
   background-size: 85%;             /* Smaller mountain */
-  background-position: -10% bottom; /* Shift left beyond visible edge */
+  background-position: -30% bottom; /* Shift left beyond visible edge */
   background-repeat: no-repeat;
 }
 }
