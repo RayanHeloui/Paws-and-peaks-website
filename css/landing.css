@@ -256,7 +256,7 @@ input, button {
 
   .slogan-line1 {
     position: absolute;
-    top: -250px;
+    top: -240px;
     left: 20px;
     font-size: 7.5vw;
     color: #5a3d29;
@@ -267,7 +267,7 @@ input, button {
   .slogan-line2 {
     position: absolute;
     top: -140px; /* Adjust to sit over mountain */
-    left: 70%;
+    left: 65%;
     transform: translateX(-50%);
     font-size: 7.5vw;
     color: #5a3d29;
