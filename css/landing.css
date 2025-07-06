@@ -338,3 +338,46 @@ input, button {
     margin-top: 15px;
   }
 }
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  /* Prevent overflow breaking layout in landscape mode */
+  body {
+    overflow-x: hidden;
+  }
+
+  .email-box-container {
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    flex-direction: column;
+  }
+
+  .form-overlay {
+    position: static;
+    transform: none;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .slogan-line1,
+  .slogan-line2 {
+    position: static;
+    text-align: center;
+    font-size: 6vw;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .slogan-text {
+    position: static;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .bg-container {
+    background-size: contain;
+    background-position: center bottom;
+  }
+}
