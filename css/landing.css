@@ -309,7 +309,7 @@ input, button {
   }
 
   .thank-you-heading {
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #d76c29;
     -webkit-text-stroke: 0.4px #6c2900;
@@ -319,14 +319,14 @@ input, button {
   }
 
   .thank-you-text {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.1;
     margin: 0;
     padding: 0;
   }
 
   .thank-you-signoff {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-weight: bold;
     margin-top: 6px;
   }
