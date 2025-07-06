@@ -356,7 +356,7 @@ input, button {
     top: 50%;
     left: 68%;
     transform: translate(-50%, -50%) scale(0.75);
-    width: 70%;
+    width: 40%;
     height: auto;
     flex-direction: column;
   }
