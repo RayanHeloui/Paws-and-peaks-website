@@ -320,9 +320,10 @@ input, button {
 
   .thank-you-text {
     font-size: 1.3rem;
-    line-height: 0.5;
+    line-height: 0.7;
     margin: 0;
     padding: 0;
+    letter-spacing: 1px;
   }
 
   .thank-you-signoff {
