@@ -376,7 +376,7 @@ input, button {
   .form-overlay {
   position: absolute;
   top: 0;
-  left: -50;
+  left: -30;
   width: 100%;
   transform: none;
   display: flex;
