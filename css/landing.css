@@ -414,13 +414,14 @@ input, button {
   }
 
  .thank-you-heading {
-  font-size: 1.7rem;
+  font-size: 2rem; /* ⬆️ Slightly bigger */
   font-weight: 700;
   color: #d76c29;
   -webkit-text-stroke: 0.4px #6c2900;
   text-align: center;
+  margin-top: 10px; /* ⬅️ Add spacing from top */
   margin-bottom: 12px;
-  transform: translateX(-7%); /* ⬅️ Nudge left */
+  transform: translateX(-7%);
 }
 
   .thank-you-text {
