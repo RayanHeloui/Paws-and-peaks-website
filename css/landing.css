@@ -399,7 +399,7 @@ input, button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px 5%;         /* Horizontal padding for spacing */
+  padding: 10px 10px;         /* Horizontal padding for spacing */
   border: 2px solid red;    /* Debug outline */
   box-sizing: border-box;
   background-color: transparent;
