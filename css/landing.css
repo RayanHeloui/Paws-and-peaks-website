@@ -391,17 +391,16 @@ input, button {
   
 .thank-you-box {
   position: absolute;
-  inset: 0;
-  top: 0;
-  left: 0;
-  width: 100%;          /* Match email container width */
-  height: 100%;         /* Match email container height */
+  inset: 0; /* ⬅️ Ensures it fills the parent container perfectly */
+  margin: auto;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  border: 2px solid red; /* 🔧 For visual debugging */
+  border: 2px solid red;
   box-sizing: border-box;
 }
 
