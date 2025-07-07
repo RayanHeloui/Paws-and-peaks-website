@@ -443,7 +443,20 @@ input, button {
   margin-left: 20%;
 }
 
-  .slogan-line1,
+  .slogan-text {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  text-align: center;
+  font-size: 5vw;
+  color: #5a3d29;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  z-index: 3;
+}
+ /*.slogan-line1,
   .slogan-line2 {
     position: static;
     display: block;
@@ -457,7 +470,7 @@ input, button {
     width: 100%;
     padding: 10px 0;
     text-align: center;
-  }
+  }*/
 
   .bg-container {
     background-size: 85%;              /* Smaller mountain */
