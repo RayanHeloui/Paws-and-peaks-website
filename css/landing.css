@@ -433,7 +433,7 @@ input, button {
   .thank-you-signoff {
     font-size: 1.6rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: -20px;
   }
 
   .paw-image {
