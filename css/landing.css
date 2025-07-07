@@ -389,11 +389,21 @@ input, button {
     z-index: 4;
   }
   
-  .thank-you-box {
-    padding: 10px;
-    transform: scale(0.9); /* Shrinks the whole block */
-    border: 2px solid red;
-  }
+.thank-you-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;          /* Match email container width */
+  height: 100%;         /* Match email container height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid red; /* 🔧 For visual debugging */
+  box-sizing: border-box;
+}
+
 
   .thank-you-content {
     width: 85%;
