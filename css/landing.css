@@ -421,7 +421,7 @@ input, button {
   text-align: center;
   margin-top: 10px; /* ⬅️ Add spacing from top */
   margin-bottom: 12px;
-  transform: translateX(-10%);
+  /*transform: translateX(-10%);*/
 }
 
   .thank-you-text {
