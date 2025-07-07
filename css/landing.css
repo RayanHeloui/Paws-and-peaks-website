@@ -392,6 +392,7 @@ input, button {
   .thank-you-box {
     padding: 10px;
     transform: scale(0.9); /* Shrinks the whole block */
+    border: 2px solid red;
   }
 
   .thank-you-content {
