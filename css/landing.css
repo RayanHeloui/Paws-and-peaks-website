@@ -414,10 +414,15 @@ input, button {
     margin: 0 auto;
   }
 
-  .thank-you-heading {
-    font-size: 1.2rem;
-    margin-bottom: 12px;
-  }
+ .thank-you-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #d76c29;
+  -webkit-text-stroke: 0.4px #6c2900;
+  text-align: center;
+  margin-bottom: 12px;
+  transform: translateX(-5%); /* ⬅️ Nudge left */
+}
 
   .thank-you-text {
     font-size: 0.95rem;
@@ -456,21 +461,6 @@ input, button {
   letter-spacing: 1.5px;
   z-index: 3;
 }
- /*.slogan-line1,
-  .slogan-line2 {
-    position: static;
-    display: block;
-    text-align: center;
-    font-size: 5vw;
-    margin: 0 auto;
-  }
-
-  .slogan-text {
-    position: static;
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
-  }*/
 
   .bg-container {
     background-size: 85%;              /* Smaller mountain */
