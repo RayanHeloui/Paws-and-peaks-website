@@ -414,7 +414,7 @@ input, button {
   }
 
  .thank-you-heading {
-  font-size: 1.9rem; /* ⬆️ Slightly bigger */
+  font-size: 1.8rem; /* ⬆️ Slightly bigger */
   font-weight: 700;
   color: #d76c29;
   -webkit-text-stroke: 0.4px #6c2900;
