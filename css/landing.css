@@ -402,7 +402,6 @@ input, button {
   padding: 0;
   box-sizing: border-box;
   background-color: transparent;
-  border: 2px solid red; /* Debug only */
   transform: translateX(30px);
 }
   .thank-you-content {
