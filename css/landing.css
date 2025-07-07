@@ -392,7 +392,7 @@ input, button {
 .thank-you-box {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -30;
   width: 100%;              /* Match container width */
   height: 100%;             /* Match container height */
   display: flex;
