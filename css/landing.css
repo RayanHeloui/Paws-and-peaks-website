@@ -348,7 +348,7 @@ input, button {
     width: 30vw;
     top: 30px;
     left: 25%;
-    transform: translateX(-50%) scale(2);
+    transform: translateX(-50%) scale(1.7);
     z-index: 4;
   }
 
