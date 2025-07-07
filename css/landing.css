@@ -392,19 +392,18 @@ input, button {
 .thank-you-box {
   position: absolute;
   top: 0;
-  left: 35px;
-  width: 100%;              /* Match container width */
-  height: 100%;             /* Match container height */
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px 10px;         /* Horizontal padding for spacing */
-  border: 2px solid red;    /* Debug outline */
+  padding: 10px;
+  border: 2px solid red; /* For debugging; remove when done */
   box-sizing: border-box;
   background-color: transparent;
 }
-
 
   .thank-you-content {
     width: 85%;
