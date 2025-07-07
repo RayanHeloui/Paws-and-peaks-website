@@ -446,7 +446,7 @@ input, button {
   .slogan-text {
   position: absolute;
   bottom: 10px;
-  left: 30%;
+  left: 25%;
   transform: translateX(-50%);
   width: 90%;
   text-align: center;
