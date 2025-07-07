@@ -446,11 +446,11 @@ input, button {
   .slogan-text {
   position: absolute;
   bottom: 10px;
-  left: 25%;
+  left: 27%;
   transform: translateX(-50%);
   width: 90%;
   text-align: center;
-  font-size: 2vw;
+  font-size: 2.2vw;
   color: #5a3d29;
   font-weight: bold;
   letter-spacing: 1.5px;
