@@ -347,7 +347,7 @@ input, button {
   .coming-title {
     width: 30vw;
     top: 30px;
-    left: 25%;
+    left: 30%;
     transform: translateX(-50%) scale(1.7);
     z-index: 4;
   }
@@ -446,7 +446,7 @@ input, button {
   .slogan-text {
   position: absolute;
   bottom: 10px;
-  left: 50%;
+  left: 20%;
   transform: translateX(-50%);
   width: 90%;
   text-align: center;
